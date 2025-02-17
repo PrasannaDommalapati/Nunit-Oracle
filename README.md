@@ -22,8 +22,8 @@ Before running the tests, ensure you have the following installed:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-repo/oracle-db-tests.git
-cd oracle-db-tests
+git clone https://github.com/PrasannaDommalapati/Nunit-Oracle.git
+cd Nunit-Oracle
 ```
 
 ### 2️⃣ Configure Database Connection
@@ -38,13 +38,18 @@ cd oracle-db-tests
 }
 ```
 
-### 3️⃣ Install Dependencies
+### 3️⃣ Create a Local Configuration File
+1. Copy `appsettings.json` and rename it to `appsettings.local.json`.
+2. Update the **OracleDB connection string** in `appsettings.local.json` with your local database credentials.
+3. Ensure `appsettings.local.json` is **added to `.gitignore`** to prevent it from being committed.
+
+### 4️⃣ Install Dependencies
 Run the following command in the project root:
 ```sh
 dotnet restore
 ```
 
-### 4️⃣ Run the Tests
+### 5️⃣ Run the Tests
 Execute the NUnit tests using:
 ```sh
 dotnet test
