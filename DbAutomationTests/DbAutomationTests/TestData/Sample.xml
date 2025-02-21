@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User>
+		<ID>1</ID>
+		<Name>John Doe</Name>
+		<Email>john.doe@example.com</Email>
+	</User>
+	<User>
+		<ID>2</ID>
+		<Name>Jane Smith</Name>
+		<Email>jane.smith@example.com</Email>
+	</User>
+	<User>
+		<ID>3</ID>
+		<Name>Bob Johnson</Name>
+		<Email>bob.johnson@example.com</Email>
+	</User>
+	<ApplicationName>Test</ApplicationName>
+</Users>
