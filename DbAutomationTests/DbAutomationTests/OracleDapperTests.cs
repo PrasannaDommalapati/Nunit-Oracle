@@ -35,5 +35,11 @@ namespace DbAutomationTests
             var remainingCount = connection.QueryFirstOrDefault<int>("SELECT COUNT(*) FROM USERS WHERE ID IN @Ids", new { Ids = idsToDelete });
             Assert.That(remainingCount, Is.EqualTo(0), "Records with specified IDs should be deleted.");
         }
+
+        [Test]
+        public void ReadEcel()
+        {
+            ReadExcelHelper.Read();
+        }
     }
 }
